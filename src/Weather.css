@@ -1,0 +1,118 @@
+:root{
+  --primary-color: #3e5cc9;
+  --secondary-color: #f0f8ff;
+}
+.body{
+  margin-top: 150px!important;
+}
+.head{
+  max-width: 500px;
+  margin: 10px auto!important;
+}
+.date-container .location{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.temp-main{
+  font-size: 75px;
+}
+.weather-container ul{
+  list-style: none;
+}
+.unit{
+  color: var(--primary-color);
+  text-transform: uppercase!important;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -35px;
+}
+.celsius{
+  font-size: 14px;
+  font-weight: 500;  
+}
+.weather-description{
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.current-location-btn{
+  margin-top: 200px;
+}
+.current-location-btn button{
+  margin: 20px;
+  padding: 8px;
+  line-height: 1.5;
+  font-weight: 300;
+  border: 1px solid #494949;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  background: linear-gradient(109.6deg, rgb(9, 175, 167) 11.2%, rgb(12, 29, 184) 91.1%);
+  opacity: 0.8;
+  transition: all 200ms ease-in-out;
+}
+.current-location-btn button:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+.weather-container{
+  margin-top: 100px;
+}
+.weather-data-specific{
+  color: var(--primary-color);
+}
+.weather-data-specific ul{
+  margin: 10px;
+  list-style: none;
+}
+.weather-data-specific li{
+  display: flex;
+  justify-content: space-between;
+}
+.weather-data-specific .title{
+  font-weight: 700;
+}
+
+.Weather{
+  display: block;
+  margin: 80px auto;
+  background-color: #0364f72a;
+  border-radius: 25px;
+  max-width: 800px;
+}
+.weather-data{
+  color: var(--primary-color);
+  position: relative;
+  height: 100%;
+  border-radius: 25px;
+  background-image: url("https://media.istockphoto.com/id/969853208/photo/planet-earth.jpg?s=612x612&w=0&k=20&c=cAUHl9LVlMORNmdomzyXndeML21XP8D5vo9rZoQupio=");
+  width: 400px;
+  -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+  transform: translateZ(0) scale(1.02) perspective(1000px);
+  float: left;
+}
+.weather-data:hover{
+  -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
+  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.time, input{
+  padding: 10px;
+  border-radius: 50px;
+	border:solid 2px var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  background: transparent;
+}
+
+/*search form*/
+
+
