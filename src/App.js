@@ -5,8 +5,9 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="container-fluid App">
-      <Weather />
+      <Weather defaultCity="Mombasa"/>
     </div>
+    //link to github
   );
 }
 
