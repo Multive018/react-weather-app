@@ -7,7 +7,7 @@ function App() {
     <div className="container-fluid App">
       <Weather defaultCity="Mombasa" />
       <footer>
-        This project was coded by Sharon Mbeneka and is{" "}
+        This project was coded by <a href="/">Sharon Mbeneka</a> and is{" "}
         <a
           href="https://github.com/Multive018/react-weather-app"
           target="_blank"
@@ -17,7 +17,7 @@ function App() {
         </a>{" "}
         and{" "}
         <a
-          href="https://suspicious-beaver-111c4d.netlify.com/"
+          href="https://hilarious-faloodeh-cf953c.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
