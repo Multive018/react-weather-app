@@ -6,6 +6,8 @@ export default function Temperature(props){
 
   function convertToFahrenheit(event){
     event.preventDefault();
+    setUnit("fahrenheit");
+  }
 
   function convertToCelsius(event){
     event.preventDefault();
