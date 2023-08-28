@@ -104,7 +104,7 @@ a{
   position: relative;
   height: 100%;
   border-radius: 25px;
-  background-image: url("https://media.istockphoto.com/id/969853208/photo/planet-earth.jpg?s=612x612&w=0&k=20&c=cAUHl9LVlMORNmdomzyXndeML21XP8D5vo9rZoQupio=");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/963/original/background.jpg?1693240056");
   width: 350px;
   -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
