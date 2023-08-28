@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import WeatherData from "./WeatherData";
 import "./Weather.css";
@@ -54,7 +55,7 @@ if (weatherData.loaded){
           </div>
         </div>
       </div>
-      <div className="Weather container-fluid">
+      <div className="container-fluid Weather">
         <WeatherData data={weatherData}/>
       </div>
     </div>
