@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 export default function Date(props){
   let days = [
@@ -37,11 +38,16 @@ export default function Date(props){
     minutes = `0${minutes}`;
   }
   return (
-  <div>
-    <h2> {day} </h2>
-    <div>
-      {month} {hours}:{minutes}
+    <div className="date">
+      <h2> {day} </h2>
+      <div className="date-data">
+        <h5>{month}</h5>
+        <div>
+          <span>
+            Last Updated: {hours}:{minutes}{" "}
+          </span>
+        </div>
+      </div>
     </div>
-  </div>
   );
 } 

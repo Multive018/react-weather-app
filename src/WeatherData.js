@@ -3,14 +3,14 @@ import "bootstrap/dist/css/bootstrap.css";
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
 import Date from "./Date";
+import Forecast from "./Forecast";
 
 import "./Weather.css";
 
 export default function WeatherData(props){
   return (
-    <div className="row">
-      <div className="col-6">
-        <div className="container-fluid weather-data">
+    <div className="container-fluid">
+        <div className="weather-data">
           <header>
             <div className="date-container">
               <span className="date">
@@ -41,9 +41,8 @@ export default function WeatherData(props){
             </div>
           </header>
         </div>
-      </div>
-      <div className="col-6">
-        <div className="container-fluid weather-data-specific">
+      <div className="weather-info">
+        <div className="weather-data-specific">
           <ul>
             <li>
               <span className="title">PRESSURE</span>
@@ -58,11 +57,13 @@ export default function WeatherData(props){
               <span className="value">{props.data.wind}M/S</span>
             </li>
           </ul>
-          <div className="forecast"></div>
+        </div>
+          <div>
+            <Forecast coords={props.data.coordinates} />
+          </div>
           <div className="current-location-btn">
             <button>Current Location</button>
           </div>
-        </div>
       </div>
     </div>
   );

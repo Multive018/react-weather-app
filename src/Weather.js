@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import Clock from "./Clock";
 import "./Weather.css";
 
 export default function Weather(props){
@@ -46,16 +47,19 @@ if (weatherData.loaded){
   return (
     <div className="container-fluid body">
       <div className="row head">
-        <div className="col">
+        <div className= "col-5">
+          <Clock />
+        </div>
+        <div className="col-7">
           <div className="search-form">
             <form action="" onSubmit={handleSubmit}>
-              <input type="search" onChange={changeCity} required />
+              <input type="search" placeholder="Enter a City..." onChange={changeCity} required />
               <i class="fa fa-search"></i>
             </form>
           </div>
         </div>
       </div>
-      <div className="container-fluid Weather">
+      <div className="Weather">
         <WeatherData data={weatherData}/>
       </div>
     </div>

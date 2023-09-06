@@ -26,6 +26,18 @@ a{
 .weather-container ul{
   list-style: none;
 }
+.date-data{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 30px;
+  background : #1e2233;
+  opacity: 0.9;
+}
+.date span{
+  font-weight: 600;
+  opacity: 0.7;
+}
 .unit{
   color: var(--primary-color);
   text-transform: uppercase!important;
@@ -101,29 +113,31 @@ a{
 }
 .weather-data{
   color: var(--primary-color);
-  position: relative;
   height: 100%;
   border-radius: 25px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/963/original/background.jpg?1693240056");
-  width: 350px;
-  -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: -webkit-transform 300ms ease;
-  transition: -webkit-transform 300ms ease;
-  -o-transition: transform 300ms ease;
-  transition: transform 300ms ease;
-  transition: transform 300ms ease, -webkit-transform 300ms ease;
-  -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
-  transform: translateZ(0) scale(1.02) perspective(1000px);
-  float: left;
+  width: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 200ms ease-in-out;
 }
 .weather-data:hover{
-  -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
-  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+  transform: scale(1.1);
 }
-
+/*clock*/
+.Clock{
+  margin-right: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 10px;
+  color: var(--primary-color);
+}
 /*search form*/
+form::placeholder{
+  color: var(--primary-color)!important;
+}
 form{
+    margin-top: 22px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -183,3 +197,9 @@ form:hover .fa{
     color: var(--primary-color);
 }
 
+.Forecast{
+  color: var(--primary-color);
+}
+.week-days{
+  list-style: none;
+}
