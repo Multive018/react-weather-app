@@ -68,6 +68,7 @@ a{
 .current-location-btn{
   margin-top: 20px;
 }
+/*
 .current-location-btn button{
   margin: 20px;
   padding: 8px;
@@ -86,6 +87,8 @@ a{
   transform: scale(1.1);
   opacity: 1;
 }
+*/
+
 .weather-container{
   margin-top: 55px;
 }

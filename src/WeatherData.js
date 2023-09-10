@@ -63,11 +63,6 @@ export default function WeatherData(props){
         <div className="mt-5">
           <Forecast coords={props.data.coordinates} />
         </div>
-        <div className="current-location-btn">
-          <button>
-            Current Location
-          </button>
-        </div>
       </div>
     </div>
   );
