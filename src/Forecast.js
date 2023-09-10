@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 import ForecastDay from "./ForecastDay";
 
@@ -8,6 +8,12 @@ export default function Forecast(props){
   let [loaded, setLoaded] = useState(false);
   let [forecastData, setForecastData] = useState(null);
 
+  //onload(after coords change), set var setload to false ("refreshes" with new coords then updates data) 
+  useEffect (()=> {
+    setLoaded(false);
+  }, [props.coords]
+  );
+
   function handleResponse(response){
     setForecastData(response.data.daily);
     setLoaded(true);
@@ -16,11 +22,19 @@ export default function Forecast(props){
   if (loaded) {
     return (
       <div className="Forecast">
-        <ul className="week-days">
-          <li className="active">
-            <ForecastDay data={forecastData[0]}/>
-          </li>
-        </ul>
+        <div className="week-days row">
+          {forecastData.map(function(dailyForecast, index){
+            if(index < 5){
+              return(
+              <div className="col days">
+                <ForecastDay data={dailyForecast} />
+              </div>
+              );
+            } else{
+              return null;
+            }
+          })}
+        </div>
       </div>
     );
   }else{

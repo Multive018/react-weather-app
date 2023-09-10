@@ -24,6 +24,7 @@ export default function Weather(props){
       description : response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       city : response.data.name,
+      country: response.data.sys.country,
     });
   }
 
