@@ -127,6 +127,9 @@ a{
 .weather-data:hover{
   transform: scale(1.1);
 }
+.loader{
+  color:var(--primary-color);
+}
 /*clock*/
 .Clock{
   margin-right: 50px;

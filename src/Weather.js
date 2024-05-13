@@ -67,7 +67,7 @@ if (weatherData.loaded){
   );
 } else{
   search();
-  return "Loading Weather Data...";
+  return  <p className="loader">Loading Weather Data...</p>;
 }
 
 }
